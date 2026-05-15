@@ -5,7 +5,7 @@ export default function Contact() {
         Let’s build something great.
       </h2>
       <a
-        href="mailto:youremail@example.com"
+        href="mailto:hwight28@gmail.com"
         className="bg-indigo-500 px-6 py-3 rounded-xl"
       >
         Email Me

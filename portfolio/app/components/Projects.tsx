@@ -30,7 +30,7 @@ const projects = [
   },
   {
     title: "Land Navigation System",
-    desc: "A tool for building and printing land navigationexams onto word documents, with a minimum distance algorithm between points to discourage collaboration.",
+    desc: "A tool for building and printing land navigation exams onto word documents, with a minimum distance algorithm between points to discourage collaboration.",
     tech: ["Python", "python-docx"],
     link: "#",
   },
@@ -39,30 +39,31 @@ const projects = [
     desc: "A Java simulation of a population over a certain number of generations. The user can save and load individual chromosomes or display a population's fitness.",
     tech: ["Java"],
     link: "#",
-}
+  }
 ];
 
 export default function Projects() {
   return (
     <motion.section
       id="projects"
-      className="max-w-4xl mx-auto px-6 py-24"
+      className="max-w-6xl mx-auto px-6 py-24"
       variants={staggerContainer}
       initial="hidden"
       whileInView="visible"
       animate="visible"
-      viewport={{once: true}}
+      viewport={{ once: true }}
     >
       <motion.h2
-        className="text-3xl font-bold mb-12"
+        className="text-3xl md:text-4xl font-bold mb-12 text-white"
         variants={fadeInUp}
       >
         Featured Projects
       </motion.h2>
-      <div className="flex flex-wrap max-w-xl min-w-xl min-h-[200px] gap-8">
-        {projects.map((p, i) => (
+
+      <div className="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
+        {projects.map((p) => (
           <Tilt
-            key={i}
+            key={p.title}
             tiltMaxAngleX={10}
             tiltMaxAngleY={10}
             perspective={1000}
@@ -70,27 +71,34 @@ export default function Projects() {
             scale={1.02}
             glareEnable={true}
             glareMaxOpacity={0.2}
-            className="rounded-2xl min-h-[200px] max-w-md bg-[#111117]"
+            className="group rounded-3xl bg-[#111117] shadow-[0_25px_80px_rgba(0,0,0,0.25)]"
           >
-          <motion.div
-            // className="p-8 bg-[#111117] rounded-2xl hover:scale-[1.02] transition"
-            variants={fadeInUp}
-            className="p-8 bg-[#111117] rounded-2xl transition"
-          >
-            <h3 className="text-xl font-semibold">{p.title}</h3>
-            <p className="text-gray-400 mt-2">{p.desc}</p>
-            <div className="mt-4 flex gap-2">
-              {p.tech.map((t, i) => (
-                <span
-                  key={i}
-                  className="text-sm bg-gray-800 px-3 py-1 rounded-full"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-          </motion.div>
-            </Tilt>
+            <motion.div
+              variants={fadeInUp}
+              className="h-full rounded-3xl border border-white/5 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8 transition duration-300 ease-out hover:-translate-y-1 hover:border-cyan-500/30"
+            >
+              <h3 className="text-xl font-semibold text-white">{p.title}</h3>
+              <p className="text-sm text-slate-400 mt-3 leading-7">{p.desc}</p>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {p.tech.map((t) => (
+                  <span
+                    key={t}
+                    className="text-[11px] uppercase tracking-[0.18em] bg-white/5 px-3 py-1 rounded-full text-slate-300"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              <a
+                href={p.link}
+                className="mt-6 inline-flex items-center text-sm font-medium text-cyan-400 hover:text-cyan-300"
+              >
+                View project
+              </a>
+            </motion.div>
+          </Tilt>
         ))}
       </div>
     </motion.section>
