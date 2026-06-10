@@ -46,13 +46,15 @@ export default function Projects() {
   return (
     <motion.section
       id="projects"
-      className="max-w-6xl mx-auto px-6 py-24"
+      className="max-w-6xl mx-auto px-12 py-24 relative overflow-hidden"
       variants={staggerContainer}
       initial="hidden"
       whileInView="visible"
       animate="visible"
       viewport={{ once: true }}
     >
+      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-950/70 via-slate-950/25 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/70 via-slate-950/25 to-transparent pointer-events-none" />
       <motion.h2
         className="text-3xl md:text-4xl font-bold mb-12 text-white"
         variants={fadeInUp}
@@ -71,12 +73,15 @@ export default function Projects() {
             scale={1.02}
             glareEnable={true}
             glareMaxOpacity={0.2}
-            className="group rounded-3xl bg-[#111117] shadow-[0_25px_80px_rgba(0,0,0,0.25)]"
+            glareBorderRadius="1.5rem"
+            className="group overflow-hidden rounded-3xl bg-[#111117] shadow-[0_25px_80px_rgba(0,0,0,0.25)]"
           >
             <motion.div
               variants={fadeInUp}
-              className="h-full rounded-3xl border border-white/5 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8 transition duration-300 ease-out hover:-translate-y-1 hover:border-cyan-500/30"
+              className="relative h-full overflow-hidden rounded-3xl border border-white/5 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-8 transition duration-300 ease-out hover:-translate-y-1 hover:border-cyan-500/30"
             >
+              <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
+              <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-slate-950/60 to-transparent pointer-events-none" />
               <h3 className="text-xl font-semibold text-white">{p.title}</h3>
               <p className="text-sm text-slate-400 mt-3 leading-7">{p.desc}</p>
 
