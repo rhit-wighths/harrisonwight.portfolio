@@ -38,12 +38,12 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
-next.config.ts
+/portfolio/next-env.d.ts
+/portfolio/next.config.ts
 
-package-lock.json
-package.json
-tsconfig.json
-postcss.config.mjs
+/portfolio/package-lock.json
+/portfolio/package.json
+/portfolio/tsconfig.json
+/portfolio/postcss.config.mjs
 
 
