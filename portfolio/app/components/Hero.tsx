@@ -33,7 +33,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-3">
+          {/* <div className="mt-10 flex flex-wrap gap-3">
             {[
               "Full-stack development",
               "Sports analytics",
@@ -47,7 +47,7 @@ export default function Hero() {
                 {item}
               </span>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="relative h-[420px] overflow-hidden md:h-[520px]">

@@ -6,14 +6,14 @@ import { fadeInUp, staggerContainer } from "../lib/animations";
 const projects = [
   {
     title: "MLB Matchup Analyzer",
-    desc: "Analyzes pitcher vs batter stats with API integration.",
-    tech: ["Python", "APIs", "Pandas"],
+    desc: "Predicts game winner based onpitcher vs batter stats.",
+    tech: ["Python", "Pandas", "scikit-learn", "ML"],
     link: "#",
   },
   {
     title: "Personal Portfolio",
     desc: "Showcases my projects and experience with a custom design.",
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Three.js"],
+    tech: ["TypeScript","Next.js", "Tailwind CSS", "Framer Motion", "Three.js"],
     link: "#",
   },
   {
@@ -39,6 +39,12 @@ const projects = [
     desc: "A Java simulation of a population over a certain number of generations. The user can save and load individual chromosomes or display a population's fitness.",
     tech: ["Java"],
     link: "#",
+  },
+  {
+    title: "Wedding Website",
+    desc: "A website built for my brother's wedding to share details and collect RSVPs.",
+    tech: ["HTML", "CSS", "JavaScript", "Firebase", "Google Maps API"],
+    link: "#",
   }
 ];
 
@@ -53,8 +59,8 @@ export default function Projects() {
       animate="visible"
       viewport={{ once: true }}
     >
-      <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-950/70 via-slate-950/25 to-transparent pointer-events-none" />
-      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/70 via-slate-950/25 to-transparent pointer-events-none" />
+      {/* <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-950/70 via-slate-950/25 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/70 via-slate-950/25 to-transparent pointer-events-none" /> */}
       <motion.h2
         className="text-3xl md:text-4xl font-bold mb-12 text-white"
         variants={fadeInUp}
@@ -74,7 +80,7 @@ export default function Projects() {
             glareEnable={true}
             glareMaxOpacity={0.2}
             glareBorderRadius="1.5rem"
-            className="group overflow-hidden rounded-3xl bg-[#111117] shadow-[0_25px_80px_rgba(0,0,0,0.25)]"
+            className="group overflow-hidden rounded-3xl bg-[#111117] "
           >
             <motion.div
               variants={fadeInUp}
