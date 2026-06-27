@@ -1,6 +1,6 @@
 "use client";
 
-import Tilt from "react-parallax-tilt";
+// import Tilt from "react-parallax-tilt";
 
 type SkillItem = {
     name: string;
@@ -102,7 +102,7 @@ export default function Skills() {
                     //     glareBorderRadius="1.5rem"
                     //     className="group overflow-hidden rounded-[1.5rem] bg-slate-950/70 shadow-[0_20px_70px_rgba(2,6,23,0.35)] ring-1 ring-white/10 backdrop-blur-xl"
                     // >
-                        <div className="relative h-full overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/[0.06] via-slate-900/80 to-slate-950/90 p-8 transition duration-300 ease-out hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]">
+                        <div key={category.title} className="relative h-full overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/[0.06] via-slate-900/80 to-slate-950/90 p-8 transition duration-300 ease-out hover:-translate-y-1 hover:border-cyan-400/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]">
                             <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
                             <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-slate-950/60 to-transparent pointer-events-none" />
                             <div className="absolute inset-0 rounded-[1.5rem] bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.12),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(168,85,247,0.14),_transparent_38%)] opacity-90 pointer-events-none" />

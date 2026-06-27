@@ -1,7 +1,7 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { Fallback } from "next/dist/client/components/segment-cache/cache-map";
+// import { Fallback } from "next/dist/client/components/segment-cache/cache-map";
 
 export default function Scene() {
   return (
