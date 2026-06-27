@@ -37,9 +37,8 @@ export default function About() {
             intersection of product thinking, analytics, and clean engineering.
           </p>
           <p className="text-lg text-slate-300 leading-8 max-w-2xl mt-4">
-            I’m especially drawn to projects that solve real problems with clarity and
-            measurable impact, whether that means improving workflows, surfacing insights,
-            or making complex systems easier to use.
+            I love building software that bridges the gap between technical complexity and 
+            human needs, creating products that are intuitive, scalable, and genuinely useful.
           </p>
 
           <div className="flex flex-wrap gap-3 mt-8">
@@ -76,6 +75,10 @@ export default function About() {
             <li className="flex items-start">
               <span className="text-cyan-400 mr-3 mt-1">•</span>
               <span>A collaborative mindset shaped by working with cross-functional teams and fast-moving projects.</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-cyan-400 mr-3 mt-1">•</span>
+              <span>Curiosity and adaptability, with a drive to learn new technologies and approaches as needed.</span>
             </li>
           </ul>
         </motion.div>

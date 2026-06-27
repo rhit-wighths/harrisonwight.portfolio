@@ -6,7 +6,7 @@ import { fadeInUp, staggerContainer } from "../lib/animations";
 const projects = [
   {
     title: "MLB Matchup Analyzer",
-    desc: "Predicts game winner based onpitcher vs batter stats.",
+    desc: "Predicts game winner based on pitcher vs batter stats.",
     tech: ["Python", "Pandas", "scikit-learn", "ML"],
     link: "#",
   },
@@ -17,8 +17,8 @@ const projects = [
     link: "#",
   },
   {
-    title: "Personal Finance Dashboard",
-    desc: "An application for tracking and analyzing personal financial data.",
+    title: "FIow",
+    desc: "An application for tracking and analyzing the flow of income and expenses.",
     tech: ["React", "Tailwind CSS"],
     link: "#",
   },
@@ -102,12 +102,12 @@ export default function Projects() {
                 ))}
               </div>
 
-              <a
+              {/* <a
                 href={p.link}
                 className="mt-6 inline-flex items-center text-sm font-medium text-cyan-400 hover:text-cyan-300"
               >
                 View project
-              </a>
+              </a> */}
             </motion.div>
           </Tilt>
         ))}
