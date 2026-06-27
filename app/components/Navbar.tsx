@@ -50,7 +50,9 @@ export default function Navbar() {
         </div>
 
         <a
-          href="/resume.pdf"
+          href="docs/Harrison Wight - Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm font-medium text-cyan-200 transition hover:border-cyan-400/40 hover:bg-cyan-400/20"
         >
           Resume

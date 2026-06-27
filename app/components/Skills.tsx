@@ -10,10 +10,10 @@ type SkillItem = {
 const skillLogoMap: Record<string, string> = {
     JavaScript: "https://cdn.simpleicons.org/javascript/F7DF1E",
     HTML: "https://cdn.simpleicons.org/html5/E34F26",
-    CSS: "images/css3_logo.png",
+    CSS: "images/CSS3_logo.png",
     Python: "https://cdn.simpleicons.org/python/3776AB",
     Java: "images/java_logo.png",
-    "C#": "images/Csharp_logo.png",
+    "C#": "images/Csharp_Logo.png",
     SQL: "https://cdn.simpleicons.org/mysql/4479A1",
     Scheme: "images/racket_logo.svg",
     C: "https://cdn.simpleicons.org/c/00599C",
